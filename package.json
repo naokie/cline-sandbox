@@ -1,0 +1,16 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:frontend": "bun run --cwd packages/frontend dev",
+    "dev:backend": "bun run --cwd packages/backend dev",
+    "build:frontend": "bun run --cwd packages/frontend build",
+    "build:backend": "bun run --cwd packages/backend build",
+    "start:frontend": "bun run --cwd packages/frontend start",
+    "start:backend": "bun run --cwd packages/backend start"
+  }
+}
