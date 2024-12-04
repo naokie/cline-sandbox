@@ -11,6 +11,17 @@
     "build:frontend": "bun run --cwd packages/frontend build",
     "build:backend": "bun run --cwd packages/backend build",
     "start:frontend": "bun run --cwd packages/frontend start",
-    "start:backend": "bun run --cwd packages/backend start"
+    "start:backend": "bun run --cwd packages/backend start",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^15.1.7",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0"
   }
 }

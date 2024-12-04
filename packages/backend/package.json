@@ -7,7 +7,8 @@
     "dev": "bun run --watch src/index.ts",
     "build": "bun build ./src/index.ts --outdir ./dist",
     "start": "bun run dist/index.js",
-    "test": "bun test"
+    "test": "bun test",
+    "lint": "eslint ."
   },
   "dependencies": {
     "hono": "^3.12.0"
